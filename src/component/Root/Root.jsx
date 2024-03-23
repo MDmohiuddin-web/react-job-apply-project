@@ -5,7 +5,7 @@ import Hader from "../Hader/Hader";
 
 const Root = () => {
     return (
-        <div>
+        <div className="font-bold uppercase">
             <div className="max-w-6xl mx-auto">
             <Hader>
 

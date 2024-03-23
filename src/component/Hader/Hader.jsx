@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Hader = () => {
 const links=<>
 <li><NavLink to='/'>Home</NavLink></li>
@@ -10,7 +12,10 @@ const links=<>
 
 </>
 
-
+  
+  const nothing=()=>{
+    toast.success("nothing  happing here");
+}
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -49,9 +54,10 @@ const links=<>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-[#00935f] text-white hover:text-black">Star Applying</a>
+          <button onClick={nothing} className="btn bg-[#00935f] text-white hover:text-black">Star Applying</button>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Catagorylist from "../catagorylist/Catagorylist";
 
 const Home = () => {
     return (
-        <div>
+        <div className="font-bold uppercase">
             {/* <h1>welcome</h1> */}
             <Baner></Baner>
             <Catagorylist></Catagorylist>
